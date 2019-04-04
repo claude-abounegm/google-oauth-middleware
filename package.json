@@ -1,0 +1,31 @@
+{
+  "name": "google-oauth-middleware",
+  "version": "1.0.0",
+  "description": "Express/connect middleware to authenticate with Google OAuth. No Passport pre-req.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claude-abounegm/google-oauth-middleware.git"
+  },
+  "keywords": [
+    "google",
+    "oauth",
+    "middleware",
+    "express",
+    "connect",
+    "no",
+    "passport"
+  ],
+  "author": "Claude Abounegm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/claude-abounegm/google-oauth-middleware/issues"
+  },
+  "homepage": "https://github.com/claude-abounegm/google-oauth-middleware#readme",
+  "peerDependencies": {
+    "googleapis": "^39.2.0"
+  }
+}
