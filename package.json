@@ -1,6 +1,6 @@
 {
   "name": "google-oauth-middleware",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Express/connect middleware to authenticate with Google OAuth. No Passport pre-req.",
   "main": "./lib/index.js",
   "scripts": {
