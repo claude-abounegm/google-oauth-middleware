@@ -1,31 +1,43 @@
 {
-  "name": "google-oauth-middleware",
-  "version": "1.0.1",
-  "description": "Express/connect middleware to authenticate with Google OAuth. No Passport pre-req.",
-  "main": "./lib/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/claude-abounegm/google-oauth-middleware.git"
-  },
-  "keywords": [
-    "google",
-    "oauth",
-    "middleware",
-    "express",
-    "connect",
-    "no",
-    "passport"
-  ],
-  "author": "Claude Abounegm",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/claude-abounegm/google-oauth-middleware/issues"
-  },
-  "homepage": "https://github.com/claude-abounegm/google-oauth-middleware#readme",
-  "dependencies": {
-    "googleapis": "^39.2.0"
-  }
+    "name": "google-oauth-middleware",
+    "version": "1.0.1",
+    "description": "Express/connect middleware to authenticate with Google OAuth. No Passport pre-req.",
+    "main": "./lib/index.js",
+    "scripts": {
+        "test": "nyc --reporter=html --reporter=text mocha ./test/spec/**/*.js",
+        "coverage": "nyc report --reporter=text-lcov | coveralls"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/claude-abounegm/google-oauth-middleware.git"
+    },
+    "keywords": [
+        "google",
+        "oauth",
+        "middleware",
+        "express",
+        "connect",
+        "no",
+        "passport"
+    ],
+    "author": "Claude Abounegm",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/claude-abounegm/google-oauth-middleware/issues"
+    },
+    "homepage": "https://github.com/claude-abounegm/google-oauth-middleware#readme",
+    "dependencies": {
+        "googleapis": "^39.2.0"
+    },
+    "devDependencies": {
+        "express": "^4.17.1",
+        "eslint": "^6.0.0",
+        "prettier": "^1.18.2",
+        "eslint-plugin-prettier": "^3.1.0",
+        "eslint-config-prettier": "^5.0.0",
+        "nodemon": "^1.19.1",
+        "chai": "^4.2.0",
+        "mocha": "^6.1.4",
+        "nyc": "^14.1.1"
+    }
 }

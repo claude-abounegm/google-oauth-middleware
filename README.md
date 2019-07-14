@@ -6,7 +6,7 @@ This is better than passport in some cases such as needing to authenticate multi
 
 ## Install
 ```bash
-npm install --save "claude-abounegm/google-oauth-middleware"
+npm i "google-oauth-middleware"
 ```
 
 ## Usage
